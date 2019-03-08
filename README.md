@@ -61,9 +61,9 @@ If you prefer not to use composer or git, you can simply [download the package](
 require_once('path/to/src/Client.php');
 ```
 
-### Docker
+### Docker 
 
-If you don't want to install PHP and all the dependencies on your host machine, you can quickly install and run it inside docker, just copy and paste these instructions in your terminal. (Of course you need docker installed - eg. apt-get install docker.io) 
+You can take the Browser Tool that uses this, for a test drive with docker: If you don't want to install PHP and all the dependencies on your host machine, you can quickly install and run it inside docker, just copy and paste these instructions in your terminal. (Of course you need docker installed - eg. apt-get install docker.io) 
 
 ```
 cd /usr/src; mkdir Art-of-WiFi; cd Art-of-WiFi; git clone --depth 1 https://github.com/Art-of-WiFi/UniFi-API-browser.git
