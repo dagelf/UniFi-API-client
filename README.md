@@ -66,10 +66,10 @@ require_once('path/to/src/Client.php');
 You can take the Browser Tool that uses this, for a test drive with docker: If you don't want to install PHP and all the dependencies on your host machine, you can quickly install and run it inside docker, just copy and paste these instructions in your terminal. (Of course you need docker installed - eg. apt-get install docker.io) 
 
 ```
-cd /usr/src; mkdir Art-of-WiFi; cd Art-of-WiFi; git clone --depth 1 https://github.com/Art-of-WiFi/UniFi-API-browser.git
-docker run --rm -ti -p 8000:8000 -v /usr/src/Art-of-WiFi/UniFi-API-browser:/usr/src alpine sh -c "cd /usr/src && apk update && apk add php php-session php-curl composer && composer install && php -S 0:8000 || sh"
+mkdir Art-of-WiFi; cd Art-of-WiFi; git clone --depth 1 https://github.com/Art-of-WiFi/UniFi-API-browser.git
+docker run --rm -ti -p 8123:8123 -v `pwd`/UniFi-API-browser:/usr/src alpine sh -c "cd /usr/src && apk update && apk add php php-session php-curl composer && composer install && php -S 0:8123 || sh"
 ```
-Point your browser to: http://127.0.0.1:8000 and just enter your Unifi Controller login details.
+Point your browser to: http://127.0.0.1:8123 and just enter your Unifi Controller login details.
 
 ## Example usage
 
